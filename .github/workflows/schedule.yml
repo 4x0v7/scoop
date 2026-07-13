@@ -15,9 +15,9 @@ jobs:
       uses: actions/checkout@main
     -
       name: Excavator
-      uses: shovel-org/GithubActions@main
+      uses: ScoopInstaller/GithubActions@main
       env:
-        GITH_EMAIL: ${{ env.SCOOP_AUTOUPDATE_COMMITTER_EMAIL }}
+        USER_EMAIL: ${{ env.SCOOP_AUTOUPDATE_COMMITTER_EMAIL }}
         GITHUB_TOKEN: ${{ secrets.SCOOP_AUTOUPDATE_TOKEN }}
         SKIP_UPDATED: '1'
     # Checkout the repo again and check if new version was just committed
